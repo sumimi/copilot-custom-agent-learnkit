@@ -1,0 +1,68 @@
+# -----------------------------
+# .gitignore - ModernCppProject
+# -----------------------------
+# 本テンプレートにおけるビルド生成物・一時ファイル・ログ類を除外するための設定です。
+
+# CMake ビルドディレクトリ（主に out-of-source）
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/install_manifest.txt
+
+# Doxygen 自動生成ドキュメント
+/docs/html/
+
+# lcov カバレッジ情報
+*.info
+*.gcda
+*.gcno
+
+# Clang-Tidy / Valgrind / その他ログ
+*.log
+
+# CTest 実行後に生成される一時データ
+/Testing/
+
+# テスト・カバレッジ・ドキュメントレポート出力先（ビルド内）
+/build/coverage_report/
+/build/test_report/
+
+# ログ出力先
+/logs/
+
+# ユーザー特有のエディタ・IDE設定（任意で拡張可）
+*.swp
+*.swo
+*.DS_Store
+.idea/
+
+# Conan 2.x パッケージマネージャ
+# ※ vendor/full_deploy/ は意図的に git 管理対象（vendor 化）
+.conan/
+.conan2/
+graph_info.json
+conaninfo.txt
+conanbuildinfo.cmake
+
+# vendor/ 配下の CMake ビルド成果物（conan install 出力とは別物）
+/vendor/.cmake/
+/vendor/CMakeFiles/
+/vendor/CMakeCache.txt
+/vendor/CMakeDoxyfile.in
+/vendor/CMakeDoxygenDefaults.cmake
+/vendor/CTestTestfile.cmake
+/vendor/Makefile
+/vendor/Testing/
+/vendor/compile_commands.json
+/vendor/cmake_install.cmake
+/vendor/CMakePresets.json
+/vendor/conan_toolchain.cmake
+/vendor/conanbuild.sh
+/vendor/conanrun.sh
+/vendor/conanbuildenv-release-x86_64.sh
+/vendor/conanrunenv-release-x86_64.sh
+/vendor/deactivate_conanbuild.sh
+/vendor/deactivate_conanrun.sh
+/vendor/src/
+/vendor/test/
