@@ -4,13 +4,13 @@ number: 006
 id: copilot-custom-agent-learnkit
 slug: copilot-custom-agent-learnkit
 
-title: "Modern C++ Template LearnKit"
+title: "Copilot Custom Agent LearnKit"
 
-subtitle_ja: "Modern C++学習用プロジェクトテンプレート"
-subtitle_en: "Modern C++ Project Template for Learning"
+subtitle_ja: "GitHub Copilot カスタムエージェント学習キット"
+subtitle_en: "GitHub Copilot Custom Agent LearnKit"
 
-description_ja: "C++17プロジェクトの環境構築を自動化し、テスト・静的解析・メモリチェック・カバレッジ測定・ドキュメント生成を最初から利用できる学習支援テンプレート"
-description_en: "Automated project setup for C++17 with built-in testing, static analysis, memory checking, coverage measurement, and documentation generation"
+description_ja: "既存のソフトウェア開発プロセスに Custom Agent・Subagent・Agent Skills・Harness を組み込み、Markdown 設計変更から実装・検証までを段階的に学ぶハンズオン教材"
+description_en: "A hands-on guide to integrating Custom Agents, Subagents, Agent Skills, and Harnesses into existing software development workflows, from Markdown design changes through implementation and verification"
 
 category_ja:
   - GitHub Copilot
