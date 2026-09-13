@@ -90,5 +90,7 @@
         {
             "text": "コミットメッセージは copilot-instructions.md に定義されたフォーマットに厳密に従ってください。形式に合わない出力は不可とします。"
         }
-    ]
+    ],
+    // context: fork を使用するスキルを有効化
+    "github.copilot.chat.skillTool.enabled": true
 }

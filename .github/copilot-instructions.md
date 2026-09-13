@@ -44,6 +44,7 @@ VS Code Agent モードでエージェント名を選択して呼び出します
 | `C++ Code Reviewer` | コードレビュー（設計・規約・セキュリティ・テスタビリティ） |
 | `C++ Debugger` | デバッグ支援（valgrind / AddressSanitizer / GDB） |
 | `Change Designer` | 変更仕様に基づく設計・影響分析・実装計画の作成 |
+| `Change Impact Analyzer` | Change Designer から呼び出される、Requirement 単位の既存設計・コード・テスト調査 |
 
 ---
 

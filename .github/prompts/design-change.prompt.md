@@ -29,7 +29,7 @@ agent: "Change Designer"
 ## 作業
 
 1. 変更要求を Requirement に分解する。
-2. 既存設計、ソースコード、ユニットテストを調査する。
+2. Requirement ごとに `Change Impact Analyzer` へ既存設計、ソースコード、ユニットテストの事実調査を委譲し、返却結果を影響分析へ統合する。
 3. 変更仕様書と同じ Change Package に `impact-analysis.md` を作成する。
 4. 同じ Change Package に `traceability.md` を作成する。
 5. 同じ Change Package に `implementation-plan.md` を作成する。
@@ -42,7 +42,8 @@ agent: "Change Designer"
 - `src/`、`include/`、`test/` 配下を変更しない。
 - ソースコードおよびユニットテストを実装・変更しない。
 - 変更仕様に存在しない要求を追加しない。
-- Subagent、Skill、Terminal、Shell を使用しない。
+- `Change Impact Analyzer` 以外の Subagent を使用しない。
+- Skill、Terminal、Shell を使用しない。
 
 作業完了後、変更した Markdown ファイル、Open Questions、Risks、重要な設計判断を提示し、次の文言で停止してください。
 

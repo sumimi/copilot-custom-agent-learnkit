@@ -7,6 +7,17 @@
 
 ---
 
+## [1.1.0] - 2026-09-13
+
+### 追加
+- **カスタムエージェント**
+  - 変更仕様書の Requirement と既存設計・ソースコード・ユニットテストの関係を調査する `Change Impact Analyzer`（`.github/agents/change-impact-analyzer.agent.md`）
+- **変更トレーサビリティスキル**
+  - 変更仕様、設計ドキュメント、ソースコード、ユニットテストの対応関係を整理・確認する `mapping-change-traceability`（`.github/skills/mapping-change-traceability/SKILL.md`）
+
+### 変更
+- `Change Designer`、設計変更プロンプト、Copilot インストラクション、VS Code 設定を新しい影響分析・追跡可能性ワークフローに対応
+
 ## [1.0.0] - 2026-09-13
 
 ### 追加
