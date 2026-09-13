@@ -189,7 +189,7 @@ VS Code の Agent mode で、以下を実行します。
 
 ### 📋 Change Designer 仕様書
 
-完全な仕様書は次を参照してください。
+`/create-agent` 用の完全な仕様書は次を参照してください。
 
 * [Change Designer 仕様書](docs/agent-specs/change-designer-agent-spec.md)
 
@@ -268,7 +268,7 @@ Change Designer が自分で行っていた、
 
 ### 📋 Change Impact Analyzer 仕様書
 
-完全な仕様書は次を参照してください。
+`/create-agent` 用の完全な仕様書は次を参照してください。
 
 * [Change Impact Analyzer 仕様書](docs/agent-specs/change-impact-analyzer-agent-spec.md)
 
@@ -316,6 +316,7 @@ Subagent と Skill は、次の観点で使い分けます。
 
 ```text
 Change Designer
+ │
  ├─ 仕様理解
  ├─ Docs 探索
  ├─ Source 探索
@@ -461,7 +462,9 @@ Change Implementation Agent
 
 ### 📋 Change Implementation Agent 仕様書
 
-> `/create-agent` にそのまま入力できる完全な仕様書を掲載する。
+`/create-agent` 用の完全な仕様書は次を参照してください。
+
+* [Change Implementation Agent 仕様書](docs/agent-specs/change-implementation-agent-spec.md)
 
 ---
 
@@ -469,9 +472,11 @@ Change Implementation Agent
 
 承認済み設計と `implementation-plan.md` を基準としてコードを変更します。
 
-### 📋 `/create-agent` 用仕様書
+### 📋 Implementation Worker 仕様書
 
-> 完全版を掲載する。
+`/create-agent` 用の完全な仕様書は次を参照してください。
+
+* [Implementation Worker 仕様書](docs/agent-specs/implementation-worker-spec.md)
 
 ---
 
@@ -479,9 +484,11 @@ Change Implementation Agent
 
 Requirement に対応する Unit Test の追加・変更とテスト実行を担当します。
 
-### 📋 `/create-agent` 用仕様書
+### 📋 Test Worker 仕様書
 
-> 完全版を掲載する。
+`/create-agent` 用の完全な仕様書は次を参照してください。
+
+* [Test Worker 仕様書](docs/agent-specs/test-worker-spec.md)
 
 ---
 
@@ -489,21 +496,17 @@ Requirement に対応する Unit Test の追加・変更とテスト実行を担
 
 以下が最後まで追跡可能か監査します。
 
-```text
-Requirement
-    ↓
-Design
-    ↓
-Source
-    ↓
-Unit Test
-    ↓
-Test Result
+```mermaid
+flowchart LR
+  requirement["Requirement"] --> design["Design"] --> source["Source"] --> unit_test["Unit Test"] --> test_result["Test Result"]
 ```
 
-### 📋 `/create-agent` 用仕様書
+### 📋 Traceability Auditor 仕様書
 
-> 完全版を掲載する。
+`/create-agent` 用の完全な仕様書は次を参照してください。
+
+* [Traceability Auditor 仕様書](docs/agent-specs/traceability-auditor-spec.md)
+
 
 ---
 
@@ -576,7 +579,7 @@ Harness が、
 
 最初の実務運用では、
 
-* Tool を最小限にする
+* Tools を最小限にする
 * Design Agent に Terminal を与えない
 * Implementation Agent でも Terminal を Worker に限定する
 * Git Diff を人間がレビューする
@@ -780,11 +783,7 @@ Custom Agent 開発で重要なのは、
 
 ## GitHub Copilot / VS Code
 
-* Custom Agents
-* Subagents
-* Agent Skills
-* Agent Harnesses
-* Hooks
+* [GitHub Copilot ドキュメント](https://docs.github.com/ja/copilot)
 
 ## このリポジトリ内の資料
 
